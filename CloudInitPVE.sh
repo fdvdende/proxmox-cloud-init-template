@@ -96,7 +96,7 @@ create_template 912 "temp-ubuntu-23-10" "ubuntu-23.10-server-cloudimg-amd64.img"
 
 ## Fedora 37
 #Image is compressed, so need to uncompress first
-wget https://download.fedoraproject.org/pub/fedora/linux/releases/37/Cloud/x86_64/images/Fedora-Cloud-Base-37-1.7.x86_64.raw.xz
+wget "https://download.fedoraproject.org/pub/fedora/linux/releases/37/Cloud/x86_64/images/Fedora-Cloud-Base-37-1.7.x86_64.raw.xz"
 xz -d -v Fedora-Cloud-Base-37-1.7.x86_64.raw.xz
 create_template 920 "temp-fedora-37" "Fedora-Cloud-Base-37-1.7.x86_64.raw"
 ## Fedora 38
